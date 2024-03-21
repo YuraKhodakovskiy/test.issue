@@ -44,7 +44,7 @@ POST /api/discount/calculate
 2. Далее напишу несколько сценарииев проверки
 Клиент не делал еще покупок
 
-дергаем метод GET /api/customer/{customer_id}/points и смотрим для у него 0 баллов
+дергаем метод GET /api/customer/{customer_id}/points и смотрим что у него 0 баллов
 дергаем метод POST /api/discount/calculate и смотрим что у него 1% скидки
 с помощью метода POST /api/customer/{customer_id}/purchase делаем оплату на 999 рублей
 далее дергаем GET /api/customer/{customer_id}/points и смотрим что у юзера все еще 0 баллов
